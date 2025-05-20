@@ -10,7 +10,7 @@
         public int Downvotes { get; set; }
         public int RepliesCount { get; set; }
         public required string UserId { get; set; }
-        public required string ParentId { get; set; }
+        public required int ParentId { get; set; }
         public required string ParentType { get; set; } // "Post" or "Comment"
     }
 }

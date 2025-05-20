@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using DiscusslyApi.Data;
+using DiscusslyApi.DAL;
 
 namespace DiscusslyApi
 {
@@ -15,6 +16,8 @@ namespace DiscusslyApi
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddScoped<CategoryManeger>();
+            builder.Services.AddScoped<PostManeger>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

@@ -12,6 +12,6 @@
         public int Downvotes { get; set; }
         public int CommentsCount { get; set; }
         public required string UserId { get; set; }
-        public required string CategoryId { get; set; }
+        public required int CategoryId { get; set; }
     }
 }
