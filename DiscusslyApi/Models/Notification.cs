@@ -6,7 +6,7 @@
         public required string Content { get; set; }
         public required string UserId { get; set; } // The user who received the notification
         public required int RelatedId { get; set; } // The ID of the related post, comment, or private message.
-        public required string Type { get; set; } // "Comment", "Post" or "PrivateMessage".
+        public required string Type { get; set; } // "Comment" or "PrivateMessage".              ********************** CHANGE TO ENUM **********************
         public DateTime CreatedAt { get; set; }
         public bool IsRead { get; set; }
     }
