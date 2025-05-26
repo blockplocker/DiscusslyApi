@@ -1,10 +1,11 @@
 ﻿using Discussly.Models;
 using DiscusslyApi.Data;
+using DiscusslyApi.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace DiscusslyApi.DAL
 {
-    public class PostManeger
+    public class PostManeger : IPostManeger
     {
         private readonly DiscusslyApiContext _context;
 

@@ -1,11 +1,12 @@
 ﻿using Discussly.Models;
 using DiscusslyApi.Data;
+using DiscusslyApi.Interface;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 
 namespace DiscusslyApi.DAL
 {
-    public class CommentManeger
+    public class CommentManeger : ICommentManeger
     {
         private readonly DiscusslyApiContext _context;
 

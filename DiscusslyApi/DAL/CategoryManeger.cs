@@ -1,10 +1,11 @@
 ﻿using Discussly.Models;
 using DiscusslyApi.Data;
+using DiscusslyApi.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace DiscusslyApi.DAL
 {
-    public class CategoryManeger
+    public class CategoryManeger : ICategoryManeger
     {
         private readonly DiscusslyApiContext _context;
         public CategoryManeger(DiscusslyApiContext context)
