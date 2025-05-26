@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Discussly.Models;
 using DiscusslyApi.DAL;
+using DiscusslyApi.Interface;
 
 namespace DiscusslyApi.Controllers
 {
@@ -10,9 +11,9 @@ namespace DiscusslyApi.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly CategoryManeger _maneger;
+        private readonly ICategoryManeger _maneger;
 
-        public CategoriesController(CategoryManeger maneger)
+        public CategoriesController(ICategoryManeger maneger)
         {
             _maneger = maneger;
         }

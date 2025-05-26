@@ -14,7 +14,8 @@ namespace DiscusslyApi.Data
         {
         }
 
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Post> Post { get; set; }
+        public DbSet<Category> Category { get; set; } = default!;
+        public DbSet<Post> Post { get; set; } = default!;
+        public DbSet<Comment> Comment { get; set; } = default!;
     }
 }
